@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    width: 99.5%;
+    height: 500px;
+    border: solid 1px black;
+}
+
+.character{
+    width: 80px;
+    height: 150px;
+    background: url(./Screenshot_2024-07-07_172408-removebg-preview\ \(1\).png);
+    background-position-x: -10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 349px;
+    left: 50px;
+}
+
+.animate{
+    animation: jump 500ms infinite;
+}
+
+
+
+.block{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 255px;
+    left: 96.6%;
+    animation: block 3s infinite linear;
+}
+
+@keyframes jump {
+    0%{
+        top: 349px;
+    }
+    30%{
+        top: 150px;
+    }
+    70%{
+        top: 150px;
+    }
+    100%{
+        top: 349px;
+    }
+}
+
+@keyframes block {
+    0%{
+        left: 96.6%;
+    }
+    100%{
+        left: -40%;
+    }
+}
