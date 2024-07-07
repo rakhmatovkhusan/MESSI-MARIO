@@ -1,12 +1,15 @@
 var character = document.querySelector(".character");
 var block = document.querySelector(".block");
+let messi = document.querySelector(".img_messi")
 
 function jump(){
     if(character.classList != "animamte"){
         character.classList.add("animate");
+        messi.setAttribute('src', "./Screenshot_2024-07-07_173111-removebg-preview.png");
     }
     setTimeout(function(){
         character.classList.remove("animate");
+        messi.setAttribute('src', "./Screenshot_2024-07-07_172408-removebg-preview (1).png");
     },500);
 }
 

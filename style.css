@@ -21,13 +21,17 @@ body{
 .character{
     width: 80px;
     height: 150px;
-    background: url(./Screenshot_2024-07-07_172408-removebg-preview\ \(1\).png);
-    background-position-x: -10px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     top: 349px;
     left: 50px;
+}
+
+.character img{
+    width: 150px;
+    height: 150px;
 }
 
 .animate{
