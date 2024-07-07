@@ -19,6 +19,6 @@ let checkDead = setInterval(function(){
     if(blockLeft < 90 && blockLeft > 0 &&   characterTop>=349){
         block.style.animation = "none";
         block.style.display = "none";
-        alert("YOU LOSE, TRY AGAIN!")
+        alert("YOU LOSE!")
     }
 },10)
